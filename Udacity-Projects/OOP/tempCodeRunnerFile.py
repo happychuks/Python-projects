@@ -1,0 +1,1 @@
+print(happy_Shirt.get_price())
