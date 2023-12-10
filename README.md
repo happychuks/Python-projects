@@ -1,2 +1,3 @@
 # Python-projects
-everything python
+- Self study
+- courses
