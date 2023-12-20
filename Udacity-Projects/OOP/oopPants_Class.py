@@ -13,7 +13,7 @@ class Pants:
         Attributes:
             pant_color (str): color of a pants object
             waist_size (str): waist size of a pants object
-            pant_type (str): type of a pants object
+            pant_type (str): type of a pant object
             pant_price (float): price of a pants object
         """
         self.color = pant_color

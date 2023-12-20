@@ -1,7 +1,7 @@
 class Shirt:
     def __init__(self, shirt_color, shirt_size, shirt_type, shirt_price):
         self.color = shirt_color
-        self.size = shirt_price
+        self.size = shirt_size
         self.type = shirt_type
         self.price = shirt_price
     
