@@ -1,6 +1,14 @@
-We're the knights of the round table
-We dance whenever we're able
-We're the knights of the round table
-We dance whenever we're able
-We're the knights of the round table
-We dance whenever we're able
+ade
+boy
+fight
+log
+son
+
+"""
+We are the knights of the round table
+We dance whenever we are able
+We are the knights of the round table
+We dance whenever we are able
+We are the knights of the round table
+We dance whenever we are able
+"""
