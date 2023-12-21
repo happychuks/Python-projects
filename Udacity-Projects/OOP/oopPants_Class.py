@@ -1,25 +1,49 @@
 class Pants:
     """The Pants class represents an article of clothing sold in a store
     """
-    def __init__(self, pant_color, waist_size, pant_type, pant_price):
+    
+    def __init__(self, color, waist_size, length, price):
         """Method for initializing a Pants object
     
         Args: 
-            pant_color (str)
+            color (str)
             waist_size (int)
-            pant_type (str)
-            pant_price (float)
+            length (int)
+            price (float)
             
         Attributes:
-            pant_color (str): color of a pants object
+            color (str): color of a pants object
             waist_size (str): waist size of a pants object
-            pant_type (str): type of a pant object
-            pant_price (float): price of a pants object
+            length (str): length of a pants object
+            price (float): price of a pants object
         """
-        self.color = pant_color
-        self.size = waist_size
-        self.type = pant_type
-        self.price = pant_price
+            
+        self.color = color
+        self.waist_size = waist_size
+        self.length = length
+        self.price = price
+    
+    def change_price(self, new_price):
+        """The change_price method changes the price attribute of a pants object
+    
+        Args: 
+            new_price (float): the new price of the pants object
+            
+        Returns: None
+        
+        """
+        self.price = new_price
+    
+    def discount(self, percentage):
+        """The discount method outputs a discounted price of a pants object
+
+        Args:
+            percentage (float): a decimal representing the amount to discount
+
+        Returns:
+            float: the discounted price
+        """
+        return self.price * (1 - percentage)
     
     def get_price(self):
         return self.price
