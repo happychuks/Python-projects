@@ -16,6 +16,33 @@ class Gaussian():
         self.mean = mu
         self.stdev = sigma
         self.data = []
+    
+    def __add__(self, other):
+        """Function to add together two Gaussian distributions
+        
+        Args:
+            other (Gaussian): the other Gaussian instance
+        
+        Returns:
+            Guassian: the Gaussian distribution
+        """
+
+        result = Gaussian()
+        result.mean = self.mean + other.mean
+        result.stdev = math.sqrt(self.stdev ** 2 + other.stdev ** 2)
+
+        return result
+
+    def __repr__(self):
+        """Function to output the characteristics of the Guassian instance
+        
+        Args:
+            None
+        Returns:
+            strings: characteristics of the Guassian
+        """
+        return "mean {}, standard deviation {}".format(self.mean, self.stdev)
+
 
     
     def calculate_mean(self):
@@ -172,3 +199,9 @@ class Gaussian():
         plt.show()
 
         return x, y
+gaus1 = Gaussian(5, 2)
+gaus2 = Gaussian(10, 1)
+
+gaussian_sum = gaus1 + gaus2
+print(gaussian_sum.mean)
+print(gaussian_sum.stdev)
