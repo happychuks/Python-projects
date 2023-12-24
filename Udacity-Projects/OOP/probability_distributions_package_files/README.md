@@ -24,6 +24,21 @@ source environmentname/bin/activate
 ```
 It is advisable to switch to a virtual environment when installing packages that are not directly available on python. 
 
+## Uploading to pypi repository
+```bash 
+cd <packages directory name>
+python setup.py sdist
+pip install twine
+or python3 -m pip install twine
+
+# commands to upload to the pypi test repository
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+pip install --index-url https://test.pypi.org/simple/ <package name>
+
+# command to upload to the pypi repository
+twine upload dist/*
+pip install <package name>
+```
 ## You can install this package from the pypi.org repository using the following command
 `pip install flexy-probability-distributions-hApImAn`
 or
